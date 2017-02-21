@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="0" name="ScrollSpeed" sid="106960340464746" static="0" type="number">200</variable>
+        <event-block sid="805705173638138">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="943358593666675" type="player">
+                    <param id="0" name="Object">TiledBackground</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="246385283541646" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="870336010419882">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="469580896966333" type="System" />
+            </conditions>
+            <actions>
+                <action id="-23" name="Move at angle" sid="615470426058699" type="Finish">
+                    <param id="0" name="Angle">180</param>
+                    <param id="1" name="Distance">10</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="194953917517488">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="917061721224218" type="System" />
+            </conditions>
+            <actions>
+                <action id="-23" name="Move at angle" sid="188026387146988" type="TiledBackground">
+                    <param id="0" name="Angle">180</param>
+                    <param id="1" name="Distance">10</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="181586073194410">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="595096338706881" type="System" />
+            </conditions>
+            <actions>
+                <action id="-23" name="Move at angle" sid="874667518312259" type="EndPoint">
+                    <param id="0" name="Angle">180</param>
+                    <param id="1" name="Distance">10</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="897822856643362">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="538831492709282" type="player">
+                    <param id="0" name="Object">Finish</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-43" name="Go to next/previous layout" sid="388509868388019" type="System">
+                    <param id="0" name="Which">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
