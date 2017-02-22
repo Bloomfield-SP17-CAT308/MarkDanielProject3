@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable constant="0" name="DistanceRemaining" sid="730168939058762" static="0" type="number">0</variable>
         <variable constant="0" name="ScrollSpeed" sid="106960340464746" static="0" type="number">-700</variable>
         <event-group description="" sid="425398600824996" title="player cars">
             <sub-events>
@@ -50,6 +51,7 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="-21" name="Reset global variables" sid="652225126886488" type="System" />
                         <action id="-2" name="Go to layout" sid="238654837802516" type="System">
                             <param id="0" name="Layout">Victory Layout</param>
                         </action>
@@ -62,6 +64,7 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="-21" name="Reset global variables" sid="412168268936255" type="System" />
                         <action id="-43" name="Go to next/previous layout" sid="388509868388019" type="System">
                             <param id="0" name="Which">0</param>
                         </action>
@@ -100,6 +103,19 @@
                     <actions>
                         <action id="-2" name="Go to layout" sid="812291771808832" type="System">
                             <param id="0" name="Layout">End Layout</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="681950673058680">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="556377622881884" type="player">
+                            <param id="0" name="Object">Progressgate</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="507226488137384" type="System">
+                            <param id="0" name="Variable">DistanceRemaining</param>
+                            <param id="1" name="Value">10</param>
                         </action>
                     </actions>
                 </event-block>
@@ -147,6 +163,7 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="-21" name="Reset global variables" sid="852862243579550" type="System" />
                         <action id="-2" name="Go to layout" sid="498738781818214" type="System">
                             <param id="0" name="Layout">Victory Layout</param>
                         </action>
@@ -159,6 +176,7 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="-21" name="Reset global variables" sid="853119564527851" type="System" />
                         <action id="-43" name="Go to next/previous layout" sid="339834511701785" type="System">
                             <param id="0" name="Which">0</param>
                         </action>
@@ -197,6 +215,19 @@
                     <actions>
                         <action id="-2" name="Go to layout" sid="691405385920240" type="System">
                             <param id="0" name="Layout">End Layout</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="943179828115423">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="741388322463210" type="player2">
+                            <param id="0" name="Object">Progressgate</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="678469194810586" type="System">
+                            <param id="0" name="Variable">DistanceRemaining</param>
+                            <param id="1" name="Value">10</param>
                         </action>
                     </actions>
                 </event-block>
@@ -244,6 +275,7 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="-21" name="Reset global variables" sid="673318879726034" type="System" />
                         <action id="-2" name="Go to layout" sid="293603076055492" type="System">
                             <param id="0" name="Layout">Victory Layout</param>
                         </action>
@@ -256,6 +288,7 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="-21" name="Reset global variables" sid="820205886000856" type="System" />
                         <action id="-43" name="Go to next/previous layout" sid="952673830735672" type="System">
                             <param id="0" name="Which">0</param>
                         </action>
@@ -294,6 +327,19 @@
                     <actions>
                         <action id="-2" name="Go to layout" sid="319999828653418" type="System">
                             <param id="0" name="Layout">End Layout</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="240404142859862">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="410426332075615" type="player3">
+                            <param id="0" name="Object">Progressgate</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="573862699821740" type="System">
+                            <param id="0" name="Variable">DistanceRemaining</param>
+                            <param id="1" name="Value">10</param>
                         </action>
                     </actions>
                 </event-block>
@@ -353,6 +399,7 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="-21" name="Reset global variables" sid="745258700631967" type="System" />
                         <action id="-43" name="Go to next/previous layout" sid="196734958290867" type="System">
                             <param id="0" name="Which">0</param>
                         </action>
@@ -394,6 +441,19 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="320116683910877">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="815277330032132" type="player4">
+                            <param id="0" name="Object">Progressgate</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="449231870008908" type="System">
+                            <param id="0" name="Variable">DistanceRemaining</param>
+                            <param id="1" name="Value">10</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="655965717670151" title="System">
@@ -404,6 +464,17 @@
                     </conditions>
                     <actions>
                         <action id="-23" name="Move at angle" sid="615470426058699" type="Finish">
+                            <param id="0" name="Angle">180</param>
+                            <param id="1" name="Distance">11.7</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="624934430612371">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="468714800260208" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-23" name="Move at angle" sid="925148149874920" type="Progressgate">
                             <param id="0" name="Angle">180</param>
                             <param id="1" name="Distance">11.7</param>
                         </action>
@@ -426,6 +497,17 @@
                     </conditions>
                     <actions>
                         <action id="-23" name="Move at angle" sid="657103920987553" type="Policesuv">
+                            <param id="0" name="Angle">180</param>
+                            <param id="1" name="Distance">11.7</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="975716235146451">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="199570660925176" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-23" name="Move at angle" sid="439587058862369" type="Swatvan">
                             <param id="0" name="Angle">180</param>
                             <param id="1" name="Distance">11.7</param>
                         </action>
@@ -591,12 +673,40 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="-21" name="Reset global variables" sid="992864768840745" type="System" />
                         <action id="-2" name="Go to layout" sid="209049325232082" type="System">
+                            <param id="0" name="Layout">Title Layout</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="797913742441526">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="551018891826736" type="Keyboard">
+                            <param id="0" name="Key">32 (Space)</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="566980228493218" type="System">
+                            <param id="0" name="First value">LayoutName</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Victory Layout&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="593801296601453" type="System">
                             <param id="0" name="Layout">Title Layout</param>
                         </action>
                     </actions>
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="732903548296346">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="350002137892992" type="System" />
+            </conditions>
+            <actions>
+                <action id="3" name="Set progress" sid="688069384744122" type="ProgressBar">
+                    <param id="0" name="Value">DistanceRemaining</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

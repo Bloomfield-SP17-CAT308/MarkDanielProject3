@@ -1,6 +1,5 @@
 	to do list
 
-Finish title layout 
-Choose end point
+Choose end point tunnel image
 add Sounds
-
+Mini Map

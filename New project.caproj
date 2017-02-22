@@ -15,6 +15,7 @@
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="progressbar" version="1">Progress bar</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
@@ -407,6 +408,40 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="ProgressBar" sid="570301423413550">
+            <plugin id="progressbar" />
+        </object-type>
+        <object-type name="Progressgate" sid="741484084113753">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="296363376493757" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="705809607866826">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Roadbg2" sid="929311879478855">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Daniel\Desktop\Git Hub\Repos\Project-3-Mark-Daniel\Assests Raw\RoadBG.png" />
+        </object-type>
+        <object-type name="TiledBackground2" sid="127178546377903">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Daniel\Desktop\Project-3-Mark-Daniel\Assests Raw\Title screen.png" />
+        </object-type>
+        <object-type name="TiledBackground3" sid="737091165618589">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Daniel\Desktop\Project-3-Mark-Daniel\Assests Raw\tropical-beach-1454007190ZAK.png" />
+        </object-type>
+        <object-type name="Sprite" sid="628504608506061">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="475326784336157" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -421,6 +456,7 @@
         <layout>Beach Layout 2.xml</layout>
         <layout>City Layout 3.xml</layout>
         <layout>Dirt Layout 3.xml</layout>
+        <layout>Beach Layout 3.xml</layout>
         <layout>City Layout 4.xml</layout>
         <layout>Dirt Layout 4.xml</layout>
         <layout>Beach Layout 4.xml</layout>
