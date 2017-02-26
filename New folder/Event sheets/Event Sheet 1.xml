@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event Sheet 1</name>
+    <events>
+        <event-block sid="6144084612792845">
+            <conditions>
+                <condition id="14" name="On tap" sid="7708632918861087" type="Touch" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="6181021986540137">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="666557913310308" type="GreenFret">
+                            <param id="0" name="Object">Collider</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="130888776260077" type="System">
+                            <param id="0" name="Object to create">Flame</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">177</param>
+                            <param id="3" name="Y">872</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="7024217571568148" type="GreenFret" />
+                        <action id="0" name="Play" sid="383949476812052" type="Audio">
+                            <param id="0" name="Audio file">Music man noteA</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="1997387058584262">
+            <conditions>
+                <condition id="14" name="On tap" sid="9134173237103686" type="Touch" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="6257926987680976">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="3794315942361229" type="RedFret">
+                            <param id="0" name="Object">Collider</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="8736036203907818" type="System">
+                            <param id="0" name="Object to create">Flame</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">305</param>
+                            <param id="3" name="Y">911</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="9839228929550249" type="RedFret" />
+                        <action id="0" name="Play" sid="159893794666150" type="Audio">
+                            <param id="0" name="Audio file">Music man noteB</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="2364758601670044">
+            <conditions>
+                <condition id="14" name="On tap" sid="8197551449744928" type="Touch" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="5263109275001247">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="6619694278253967" type="BlueFret">
+                            <param id="0" name="Object">Collider</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="3990595093807349" type="System">
+                            <param id="0" name="Object to create">Flame</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">406</param>
+                            <param id="3" name="Y">872</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="1149741684111962" type="BlueFret" />
+                        <action id="0" name="Play" sid="607157169570113" type="Audio">
+                            <param id="0" name="Audio file">Music man noteC</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="674162749181496">
+            <conditions>
+                <condition id="4" name="On finished" sid="1530455180389769" type="Flame">
+                    <param id="0" name="Animation">&quot;Flame&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="2265262262297239" type="Flame" />
+            </actions>
+        </event-block>
+        <event-block sid="341172980809681">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="346782749219369" type="System">
+                    <param id="0" name="First value">LayoutName</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">&quot;Layout 1&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="705109068011652" type="Audio">
+                    <param id="0" name="Audio file">Musicman beat</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

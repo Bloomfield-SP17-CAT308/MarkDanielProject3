@@ -10,21 +10,19 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Title Layout</layout>
-        <layout order="8">City Layout 3</layout>
-        <layout order="11">City Layout 4</layout>
-        <layout order="2">City Layout</layout>
-        <layout order="5">City Layout 2</layout>
-        <layout order="3">Dirt Layout</layout>
-        <layout order="4">Beach Layout</layout>
-        <layout order="6">Dirt Layout 2</layout>
-        <layout order="7">Beach Layout 2</layout>
-        <layout order="9">Dirt Layout 3</layout>
-        <layout order="10">Beach Layout 3</layout>
-        <layout order="12">Dirt Layout 4</layout>
-        <layout order="13">Beach Layout 4</layout>
-        <layout active="1" order="14">Victory Layout</layout>
-        <event-sheet order="1">Event sheet 1</event-sheet>
+        <layout active="1" order="0">City Layout</layout>
+        <layout order="1">Dirt Layout</layout>
+        <layout order="2">Beach Layout</layout>
+        <layout order="3">City Layout 2</layout>
+        <layout order="4">Dirt Layout 2</layout>
+        <layout order="5">Beach Layout 2</layout>
+        <layout order="6">City Layout 3</layout>
+        <layout order="7">Dirt Layout 3</layout>
+        <layout order="8">Beach Layout 3</layout>
+        <layout order="9">City Layout 4</layout>
+        <layout order="10">Dirt Layout 4</layout>
+        <layout order="11">Beach Layout 4</layout>
+        <event-sheet order="12">Event sheet 1</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -34,7 +32,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </properties>
     <families-expanded root="1" />
     <folders-expanded>
-        <folder expanded="1" path="object-folder/" />
+        <folder expanded="0" path="object-folder/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="0" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
@@ -52,5 +50,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/player4/" />
         <folder expanded="1" path="animation-folder/Progressgate/" />
         <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/Sprite4/" />
     </folders-expanded>
 </c2uistate>

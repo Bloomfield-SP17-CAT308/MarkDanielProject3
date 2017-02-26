@@ -11,6 +11,7 @@
     <saved-with-version>23900</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
@@ -43,6 +44,7 @@
         <prop name="Orientations">Landscape</prop>
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
         <prop name="Preview browser">(default)</prop>
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
@@ -124,13 +126,13 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="735971000051416" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Daniel\Desktop\Git Hub\Repos\Project-3-Mark-Daniel\Assests Raw\Tunnel.png" />
                 </animation>
             </animation-folder>
         </object-type>
         <object-type name="EndPoint" sid="960333159557786">
             <plugin id="TiledBg" />
-            <texture />
+            <texture original-source="C:\Users\Daniel\Desktop\Git Hub\Repos\Project-3-Mark-Daniel\Assests Raw\Tunnel.png" />
         </object-type>
         <object-type name="title" sid="879148576746796">
             <plugin id="Text" />
@@ -442,6 +444,33 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Audio" sid="450302601269077">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="Sprite2" sid="504777126665892">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="495155527467573" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Daniel\Desktop\Git Hub\Repos\Project-3-Mark-Daniel\Assests Raw\city.PNG" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="410800211130715">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="255289991438045" speed="5">
+                    <frame duration="1" hotspotX="0.500388" hotspotY="0.5" original-source="C:\Users\Daniel\Desktop\Git Hub\Repos\Project-3-Mark-Daniel\Assests Raw\dirt.PNG" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="435201630651565">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="660004928339810" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Daniel\Desktop\Git Hub\Repos\Project-3-Mark-Daniel\Assests Raw\beach.PNG" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -467,8 +496,25 @@
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="3" />
+        <global-instance type="Audio" uid="454">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
     </global-instances>
-    <sounds-folder />
+    <sounds-folder>
+        <file name="Car_acceleration.m4a" />
+        <file name="Car_acceleration.ogg" />
+    </sounds-folder>
     <music-folder />
     <files-folder>
         <file-folder name="Icons">
